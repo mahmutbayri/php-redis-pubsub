@@ -1,0 +1,15 @@
+{
+    "name": "mahmutbayri/php-redis-pubsub",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Mahmut Bayri",
+            "email": "mahmutbayri@yahoo.com"
+        }
+    ],
+    "require": {
+        "ext-json": "*",
+        "predis/predis": "^1.1",
+        "vlucas/phpdotenv": "^3.6"
+    }
+}

@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Redis Pubsub</title>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script type="text/javascript">
+        function fetch() {
+            var sock = io("http://localhost:8000");
+            sock.on('someChannel', function (msg) {
+                var ul = document.querySelector('#list');
+                var li = document.createElement('li');
+                li.appendChild(document.createTextNode(msg));
+                ul.appendChild(li);
+            });
+        }
+    </script>
+</head>
+<body onload="fetch()">
+<ul id="list"></ul>
+</body>
+</html>
