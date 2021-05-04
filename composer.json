@@ -10,6 +10,7 @@
     "require": {
         "ext-json": "*",
         "predis/predis": "^1.1",
-        "vlucas/phpdotenv": "^3.6"
+        "vlucas/phpdotenv": "^3.6",
+        "clue/redis-react": "^2.3"
     }
 }
